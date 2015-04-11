@@ -1749,7 +1749,8 @@ class TestRunner(object):
     def _runtests(self, tests):
         try:
             if self._installdir:
-                self._installhg()
+                # TODO XXX
+                #self._installhg()
                 self._checkhglib("Testing")
             else:
                 self._usecorrectpython()
@@ -1989,6 +1990,9 @@ class TestRunner(object):
     def _checkhglib(self, verb):
         """Ensure that the 'mercurial' package imported by python is
         the one we expect it to be.  If not, print a warning to stderr."""
+        # TODO XXX
+        return
+
         if ((self._bindir == self._pythondir) and
             (self._bindir != self._tmpbindir)):
             # The pythondir has been inferred from --with-hg flag.
