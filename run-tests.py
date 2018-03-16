@@ -1577,9 +1577,6 @@ class TestRunner(object):
         os.path.basename(sys.executable),
         'diff',
         'grep',
-        'unzip',
-        'gunzip',
-        'bunzip2',
         'sed',
     ]
 
